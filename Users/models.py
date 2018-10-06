@@ -19,6 +19,6 @@ class Borrower(models.Model):
     borrow_date=models.DateField()
     is_currently_borrowed=models.BooleanField(default=False)
     amount_of_borrowed_money=models.IntegerField()
-    amount_of_payed_back_money=models.FloatField()
+    monthly_share=models.FloatField()
     investors_ids=models.ManyToManyField(Investor)
 
